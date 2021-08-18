@@ -1,0 +1,10 @@
+
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tab:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
