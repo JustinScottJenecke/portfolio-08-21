@@ -1,10 +1,107 @@
 
+/*
+===== Variables ===== 
+*/    
 
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+    :root {
 
-.tab:nth-child(odd) {
-    background-color: black;
-    color: white;
-}
+        /*Fonts*/
+            --fontHeading: 'Tahoma', sans-serif;
+            --fontBody: 'Helvetica', sans-serif;
+            --fontlink: 'Consolas';
+            --fontOther: 'Trebuchet', sans-serif;
+
+        /*Colours*/
+            --colorDominant: #ffffff; /*white*/
+            --colorDominant_a:#ebe8e8;
+
+            --colorCompliment: #242424;  /*Grey-Black*/
+            --colorCompliment_a: #383838;
+
+            --colorAccent: #55ff4d; /*Lime-Neon*/
+
+        /*Font Sizes*/
+            --sizeTitle: 3rem;
+            --sizeHeading_a: 2.25rem; 
+            --sizeHeading_b: 1.25rem;
+            --sizeBody: 1rem;
+        
+            
+            --weightTitle: 350;
+            --weightHeading: 300;
+    }
+
+    @media (min-width: 800px) {
+
+        :root {
+            
+        /*Font Sizes*/
+            --sizeTitle: 4rem;
+            --sizeHeading_a: 3rem; 
+            --sizeHeading_b: 2rem;
+            --sizeBody: 1.5rem;
+        }
+
+    }
+
+
+/* 
+===== CSS styling =====
+*/
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+
+/*
+    --- Global ---
+*/   
+    body {
+        font-family: var(--fontBody);
+        font-size: var(--sizeBody);
+        background-color: var(--colorDominant);
+        color: var(--colorCompliment);
+        margin: 0;
+    }
+
+    body h1 {
+        font-family: var(--fontHeading);
+        font-size: var(--sizeTitle);
+        font-weight: var(--weightTitle);
+    }
+
+    body h2 {
+        font-family: var(--fontHeading);
+        font-size: var(--sizeHeading_a);
+        font-weight: var(--weightHeading);
+    }
+
+    body h3 {
+        font-family: var(--fontHeading);
+        font-size: var(--sizeHeading_b);
+        font-weight: var(--weightHeading);
+    }
+
+
+/*
+    --- Navigation Bar ---
+*/
+    .nav {
+        display: block;
+        background-color: var(--colorDominant_a);
+        font-family: var(--fontlink);
+        color: var(--colorCompliment);
+    }
+
+    .nav > ul {
+        list-style: none;
+        cursor: pointer;
+    }
+    
+    .nav > ul> li:hover {
+        color: var(--colorAccent);
+    }
+
