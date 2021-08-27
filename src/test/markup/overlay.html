@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .face {
+            height: 100%;
+            width: 100%;
+            background-color: red;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            color: tomato;
+        }
+
+        .card:hover > .overlay {
+            display: none
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="face">
+            this is pen!
+        </div>
+        <div class="overlay">
+            kore wa pen desu!
+        </div>
+    </div>
+</body>
+</html>

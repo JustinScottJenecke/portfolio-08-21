@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        :root {
+            --spinner_small: 300px;
+            --spinner_medium: 360px;
+            --spinner_large: 420px;
+
+            --margin_small:-120px;
+            --margin_medium:-150px;
+            --margin_large:-180px;
+
+            --transparent-color:rgba(0, 0, 0, 0);
+        }
+
+        body {
+            background-color: white;
+        }
+        .spinner-1 {
+            content: "";
+            box-sizing: border-box;
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            height: var(--spinner_small);
+            width: var(--spinner_small);
+
+            margin-top: var(--margin_small);
+            margin-left: var(--margin_small);
+
+            border-radius: 50%;
+            border: 20px solid var(--transparent-color);
+            border-top-color:  rgba(6, 255, 101, 70);
+            border-left-color:  rgba(6, 255, 101, 70);
+            border-right-color: rgba(6, 255, 101, 70);
+            animation: spinner 3s linear infinite;
+        }
+        .spinner-2 {
+            content: "";
+            box-sizing: border-box;
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            height: var(--spinner_medium);
+            width: var(--spinner_medium);
+
+            margin-top: var(--margin_medium);
+            margin-left: var(--margin_medium);
+
+            border-radius: 50%;
+            border: 20px solid var(--transparent-color);
+            border-bottom-color:  rgba(52, 255, 52, 70);
+            border-left-color:  rgba(52, 255, 52, 70);
+            border-right-color: rgba(52, 255, 52, 70);
+            animation: spinner 3s linear infinite;
+        }
+        .spinner-3 {
+            content: "";
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            height: var(--spinner_large);
+            width: var(--spinner_large);
+
+            margin-top: var(--margin_large);
+            margin-left: var(--margin_large);
+
+            border-radius: 50%;
+            border: 20px solid var(--transparent-color);
+            border-top-color:  rgba(84, 252, 98, 70);
+            border-left-color:  rgba(84, 252, 98, 70);
+            border-right-color: rgba(84, 252, 98, 70);
+            animation: spinner 3s linear infinite;
+        }
+        @keyframes spinner {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner-1">       
+    </div>
+    <div class="spinner-2">       
+    </div>
+    <div class="spinner-3">       
+    </div>
+</body>
+</html>
