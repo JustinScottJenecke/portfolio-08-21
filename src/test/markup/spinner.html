@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spinner Test</title>
 
     <style>
 
         :root {
-            --spinner_small: 300px;
-            --spinner_medium: 360px;
-            --spinner_large: 420px;
+            --spinner_small: 380px;
+            --spinner_medium: 440px;
+            --spinner_large: 500px;
 
-            --margin_small:-120px;
-            --margin_medium:-150px;
-            --margin_large:-180px;
+            --margin_small:-220px;
+            --margin_medium:-250px;
+            --margin_large:-280px;
 
             --transparent-color:rgba(0, 0, 0, 0);
+
+            --spinnerWidth: 10px
         }
 
         body {
-            background-color: white;
+            background-color: black;
         }
         .spinner-1 {
             content: "";
@@ -38,16 +40,18 @@
             margin-left: var(--margin_small);
 
             border-radius: 50%;
-            border: 20px solid var(--transparent-color);
+            border: var(--spinnerWidth) solid var(--transparent-color);
+
             border-top-color:  rgba(6, 255, 101, 70);
             border-left-color:  rgba(6, 255, 101, 70);
             border-right-color: rgba(6, 255, 101, 70);
-            animation: spinner 3s linear infinite;
+            animation: spinner 7s linear infinite;
         }
         .spinner-2 {
             content: "";
             box-sizing: border-box;
             position: absolute;
+            color: white;
 
             top: 50%;
             left: 50%;
@@ -59,11 +63,12 @@
             margin-left: var(--margin_medium);
 
             border-radius: 50%;
-            border: 20px solid var(--transparent-color);
+            border: var(--spinnerWidth) solid var(--transparent-color);
+
             border-bottom-color:  rgba(52, 255, 52, 70);
             border-left-color:  rgba(52, 255, 52, 70);
             border-right-color: rgba(52, 255, 52, 70);
-            animation: spinner 3s linear infinite;
+            animation: spinner 6s linear infinite;
         }
         .spinner-3 {
             content: "";
@@ -79,11 +84,12 @@
             margin-left: var(--margin_large);
 
             border-radius: 50%;
-            border: 20px solid var(--transparent-color);
+            border: var(--spinnerWidth) solid var(--transparent-color);
+
             border-top-color:  rgba(84, 252, 98, 70);
             border-left-color:  rgba(84, 252, 98, 70);
             border-right-color: rgba(84, 252, 98, 70);
-            animation: spinner 3s linear infinite;
+            animation: spinner 6s linear infinite;
         }
         @keyframes spinner {
             to {
@@ -93,7 +99,7 @@
     </style>
 </head>
 <body>
-    <div class="spinner-1">       
+    <div class="spinner-1">    
     </div>
     <div class="spinner-2">       
     </div>
