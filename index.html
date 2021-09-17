@@ -34,7 +34,6 @@
             </div>
         </header>
 
-
 <!--================= Skills Section ==================-->
 
         <section class="tab" id="skills">
@@ -42,7 +41,7 @@
 
             <section id="skill__carousel">
                 <article>
-                    <h2>Website Development</h2>
+                    <h3>Website Development</h>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         Laboriosam nesciunt nam cumque provident optio molestias, 
@@ -53,7 +52,7 @@
                 </article><!---->
 
                 <article>
-                    <h2>Responsive Website Design</h2>
+                    <h3>Responsive Website Design</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         Laboriosam nesciunt nam cumque provident optio molestias, 
@@ -64,7 +63,7 @@
                 </article><!---->
 
                 <article>
-                    <h2>Agile Methodologies</h2>
+                    <h3>Agile Methodologies</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         Laboriosam nesciunt nam cumque provident optio molestias, 
@@ -82,53 +81,59 @@
         <section class="tab" id="projects">
             <h2>Projects</h2>
 
-            <div id="projects_carousel" >
-                <section id="projects__backend">
+            <nav id="projects__category_list">
+                <button id="projects__backend__cat">
                     <h3>Backend</h3>
-                    <div>
-                        <article>
-                            <h3>Project Title</h3>
-                            <figure><img src="#" alt="preview"></figure>
-                            <p>
-                                Description
-                            </p>
-                            <button>Visit/Demo</button>                      
-                            <button>Repository</button>                     
-                            <button>Documentation</button>
-                        </article>
-                    </div>
+                </button>
+                <button id="projects__frontend__cat">
+                    <h3>Frontend</h3>
+                </button>
+                <button id="projects__fullstack__cat">
+                    <h3>Fullstack</h3>
+                </button>
+            </nav>
+
+            <div id="projects__carousel" >
+                <section id="projects__backend">
+                    <article>
+                        <h4>Project Title</h4>
+                        <figure>
+                            <img src="#" alt="preview">
+                        </figure>
+                         <p>
+                             Description
+                         </p>
+                        <button>Visit/Demo</button>                      
+                        <button>Repository</button>
+                    </article>
                 </section><!--BE-->
 
                 <section id="projects__frontend">
-                    <h3>Frontend</h3>
-                    <div>
-                        <article>
-                            <h3>Project Title</h3>
-                            <figure><img src="#" alt="preview"></figure>
-                            <p>
-                                Description
-                            </p>
-                            <button>Visit/Demo</button>                      
-                            <button>Repository</button>                     
-                            <button>Documentation</button>
-                        </article>
-                    </div>
+                    <article>
+                        <h4>Project Title</h4>
+                        <figure>
+                            <img src="#" alt="preview">
+                        </figure>
+                         <p>
+                             Description
+                         </p>
+                        <button>Visit/Demo</button>                      
+                        <button>Repository</button>
+                    </article>
                 </section><!--FE-->
 
                 <section id="projects__fullstack">
-                    <h3>Fullstack</h3>
-                    <div>
-                        <article>
-                            <h3>Project Title</h3>
-                            <figure><img src="#" alt="preview"></figure>
-                            <p>
-                                Description
-                            </p>
-                            <button>Visit/Demo</button>                      
-                            <button>Repository</button>                     
-                            <button>Documentation</button>
-                        </article>
-                    </div>
+                    <article>
+                        <h4>Project Title</h4>
+                        <figure>
+                            <img src="#" alt="preview">
+                        </figure>
+                         <p>
+                             Description
+                         </p>
+                        <button>Visit/Demo</button>                      
+                        <button>Repository</button>
+                    </article>
                 </section><!--FS-->
             </div>
 
@@ -141,7 +146,7 @@
 
             <section id="tech__backend">
                 <h3>Backend</h3>
-                <div>
+                <div id="tech__backend__items">
                     <figure>#</figure>                    
                     <figure>#</figure>
                     <figure>#</figure>
@@ -151,18 +156,17 @@
 
             <section id="tech__frontend">
                 <h3>Frontend</h3>
-                <section>
-                    <div>
-                        <figure>#</figure>                    
-                        <figure>#</figure>
-                        <figure>#</figure>
-                        <figure>#</figure>
-                    </div>
+                <div id="tech__frontend__items">
+                    <figure>#</figure>                    
+                    <figure>#</figure>
+                    <figure>#</figure>
+                    <figure>#</figure>
+                </div>
             </section><!--FE-->
 
             <section id="tech__other">
                 <h3>Other</h3>
-                <div>
+                <div id="tech__other__items">
                     <figure>#</figure>                    
                     <figure>#</figure>
                     <figure>#</figure>
@@ -171,7 +175,6 @@
             </section><!--OP-->
 
         </section>
-
 
 <!--=================== Story Section ====================-->
 
@@ -193,7 +196,6 @@
             </article>
 
         </section>
-
 
 <!--================= Contact Section ==================-->
 
