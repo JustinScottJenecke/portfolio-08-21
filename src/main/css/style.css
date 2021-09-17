@@ -12,9 +12,9 @@
             --fontOther: 'Trebuchet', sans-serif;
 
         /*Colours*/
-            --colorDominant: #000000; /*Main*/
-            --colorDominant_a:#222222;
-            --colorDominant_b:#474747; /*Components and Contrast*/
+            --colorDominant: #181818; /*Main*/
+            --colorDominant_a:#1d1d1d;
+            --colorDominant_b:#3a3a3a; /*Components and Contrast*/
 
             --colorCompliment: #ececec;  /*Text & Contrast*/
             --colorCompliment_a: #c0bebe;
@@ -92,7 +92,7 @@
 */
     .nav {
         display: block;
-        background-color: var(--colorDominant_a);
+        background-color: black;
         font-family: var(--fontlink);
         color: var(--colorCompliment);
     }
