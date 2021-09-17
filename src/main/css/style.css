@@ -12,11 +12,12 @@
             --fontOther: 'Trebuchet', sans-serif;
 
         /*Colours*/
-            --colorDominant: #ffffff; /*white*/
-            --colorDominant_a:#ebe8e8;
+            --colorDominant: #000000; /*Main*/
+            --colorDominant_a:#222222;
+            --colorDominant_b:#474747; /*Components and Contrast*/
 
-            --colorCompliment: #242424;  /*Grey-Black*/
-            --colorCompliment_a: #383838;
+            --colorCompliment: #ececec;  /*Text & Contrast*/
+            --colorCompliment_a: #c0bebe;
 
             --colorAccent: #55ff4d; /*Lime-Neon*/
 
