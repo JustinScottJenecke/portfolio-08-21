@@ -14,7 +14,7 @@
         /*Colours*/
             --colorDominant: #181818; /*Main*/
             --colorDominant_a:#1d1d1d;
-            --colorDominant_b:#3a3a3a; /*Components and Contrast*/
+            --colorDominant_b:#333333; /*Components and Contrast*/
 
             --colorCompliment: #ececec;  /*Text & Contrast*/
             --colorCompliment_a: #c0bebe;
@@ -22,9 +22,9 @@
             --colorAccent: #55ff4d; /*Lime-Neon*/
 
         /*Font Sizes*/
-            --sizeTitle: 3rem;
-            --sizeHeading_a: 2.25rem; 
-            --sizeHeading_b: 1.25rem;
+            --sizeTitle: 2.6rem;
+            --sizeHeading_a: 2.2rem; 
+            --sizeHeading_b: 1.6rem;
             --sizeBody: 1rem;
         
             
@@ -39,7 +39,7 @@
         /*Font Sizes*/
             --sizeTitle: 4rem;
             --sizeHeading_a: 3rem; 
-            --sizeHeading_b: 2rem;
+            --sizeHeading_b: 2.2rem;
             --sizeBody: 1.5rem;
         }
 
@@ -61,26 +61,36 @@
     --- Global ---
 */   
     body {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+
         font-family: var(--fontBody);
         font-size: var(--sizeBody);
         background-color: var(--colorDominant);
         color: var(--colorCompliment);
-        margin: 0;
     }
 
-    body h1 {
+    h1 {
+        margin: 0.5rem;
         font-family: var(--fontHeading);
         font-size: var(--sizeTitle);
         font-weight: var(--weightTitle);
     }
 
-    body h2 {
+    h2 {
+        margin: 0.5rem;
         font-family: var(--fontHeading);
         font-size: var(--sizeHeading_a);
         font-weight: var(--weightHeading);
     }
 
-    body h3 {
+    h3 {
         font-family: var(--fontHeading);
         font-size: var(--sizeHeading_b);
         font-weight: var(--weightHeading);
@@ -91,7 +101,10 @@
     --- Navigation Bar ---
 */
     .nav {
-        display: block;
+        position: sticky;
+        top: 0;
+        height: 2.25rem;
+
         background-color: black;
         font-family: var(--fontlink);
         color: var(--colorCompliment);
@@ -100,9 +113,60 @@
     .nav > ul {
         list-style: none;
         cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-top: 0.25rem;
+        padding-right: 2vw;
+        padding-left: 2vw;
+
     }
     
     .nav > ul> li:hover {
         color: var(--colorAccent);
     }
 
+
+/*
+    --- Landing ---
+*/
+
+    .landing {
+        padding-left: 3vw;
+        padding-right: 1vw;        
+    }
+
+
+/*
+    --- Tab ---
+*/
+    .tab {
+        margin-top: 1rem;
+        padding-left: 5vw;
+        padding-right: 2vw;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .tab:nth-child(odd) {
+        background-color: var(--colorCompliment);
+        color: var(--colorDominant_a);
+    }
+
+
+    @media (min-width: 800px) {
+
+        .tab {
+            min-height: 100vh;
+
+        }
+    }
+
+/*
+    --- Footer ---
+*/
+    .footer {
+        min-height: 30vh;
+    }
