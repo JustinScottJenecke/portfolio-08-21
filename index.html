@@ -80,7 +80,7 @@
         <section class="tab" id="projects">
             <h2>Projects</h2>
 
-            <nav id="projects__category_list">
+            <nav class="projects__category__list">
                 <button id="projects__backend__cat">
                     <h3>Backend</h3>
                 </button>
@@ -143,35 +143,16 @@
         <section class="tab" id="tech">
             <h2>Technologies</h2>
 
-            <section id="tech__backend">
+            <section id="tech__backend">           
                 <h3>Backend</h3>
-                <div id="tech__backend__items">
-                    <figure>#</figure>                    
-                    <figure>#</figure>
-                    <figure>#</figure>
-                    <figure>#</figure>
+                
+                <div class="tech__items" id="tech__backend__items">
+                    <div>#</div>
+                    <div>#</div>
+                    <div>#</div>
+                    <div>#</div>
                 </div>
             </section><!--BE-->
-
-            <section id="tech__frontend">
-                <h3>Frontend</h3>
-                <div id="tech__frontend__items">
-                    <figure>#</figure>                    
-                    <figure>#</figure>
-                    <figure>#</figure>
-                    <figure>#</figure>
-                </div>
-            </section><!--FE-->
-
-            <section id="tech__other">
-                <h3>Other</h3>
-                <div id="tech__other__items">
-                    <figure>#</figure>                    
-                    <figure>#</figure>
-                    <figure>#</figure>
-                    <figure>#</figure>
-                </div>
-            </section><!--OP-->
 
         </section>
 
@@ -179,12 +160,12 @@
 
         <section class="tab" id="story">
             <h2>My Story</h2>
-            <article>
+            <div class="story__tab">
                 <figure>
                     <img src="#" alt="pic">
                 </figure><!--SP-->
 
-                <article id="story__content">
+                <article id="story__tab__content">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Error architecto tempora nostrum deleniti quod culpa assumenda, 
@@ -192,33 +173,33 @@
                         libero minus facilis voluptatibus. Quia, dicta cumque?
                     </p>
                 </article><!--SC-->
-            </article>
-
+            </div>
         </section>
 
 <!--================= Contact Section ==================-->
 
-        <section class="tab" id="contact">
+        <section class="tab contact" id="contact">
             <h2>Contact Me</h2>
-            <form action="https://formsubmit.co/your@email.com" method="POST">          
+            <form class="contact__form" action="https://formsubmit.co/your@email.com" method="POST">          
 
                 <input type="hidden" name="_next" value="resource/thanks.htm">
 
-                <label for="name">Name:</label>
-                <input type="text" id="formName" name="name"> 
+                <label class="table__item" for="name">Name:</label>
+                <input class="table__item" type="text" id="formName" name="name"> 
 
-                <label for="fname">Email:</label>
-                <input type="email" id="formEmail" name="email"> 
+                <label class="table__item" for="subject">Subject:</label>
+                <input class="table__item" type="text" id="formSubject" name="subject"> 
 
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_captcha" value="false">
+                <label class="table__item" for="fname">Email:</label>
+                <input class="table__item" type="email" id="formEmail" name="email"> 
 
-                <label for="message">Message:</label>
-                <textarea id="formMessage" name="message" rows="5"> 
-                    message..
-                </textarea>
+                <input class="table__item" type="text" name="_honey" style="display:none">
+                <input class="table__item" type="hidden" name="_captcha" value="false">
 
-                <input type="submit" value="Submit">
+                <label class="table__item" for="message">Message:</label>
+                <textarea class="table__item" id="formMessage" name="message" rows="5">Please type your message here..</textarea>
+
+                <input class="table__submit" type="submit" value="Submit">
             </form>
         </section>
 

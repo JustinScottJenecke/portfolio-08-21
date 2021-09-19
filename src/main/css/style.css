@@ -127,9 +127,9 @@
     }
 
 
-/*
+/*================================================
     --- Landing ---
-*/
+================================================*/
 
     .landing {
         padding-left: 3vw;
@@ -137,13 +137,14 @@
     }
 
 
-/*
+/*================================================
     --- Tab ---
-*/
+================================================*/
     .tab {
-        margin-top: 1rem;
+        margin: 1rem 0 1rem 0;
         padding-left: 5vw;
         padding-right: 2vw;
+        padding-bottom: 5vh;
 
         display: flex;
         flex-direction: column;
@@ -164,9 +165,156 @@
         }
     }
 
-/*
-    --- Footer ---
-*/
-    .footer {
-        min-height: 30vh;
+/*================================================
+    --- Projects ---
+================================================*/
+    #projects {
+        align-items: center;
     }
+
+    .projects__category__list {
+        margin-top: 1vh;
+        display: inline-flex;
+        justify-content: space-evenly;
+        gap: 5vw;
+    }
+    .projects__category__list h3 {
+        margin: 0;
+    }
+    .projects__category__list button {
+        padding: 0 3% 0 3%;
+        background-color: var(--colorDominant);
+        border: solid var(--colorDominant_b);
+        color: var(--colorDominant_b);
+    }
+    .projects__category__list > button:hover {
+        /*background-color: var(--colorDominant);*/
+        border: solid var(--colorAccent);
+        color: var(--colorAccent);
+    }
+
+
+/*================================================
+    --- Tech ---
+================================================*/
+    #tech {
+        align-items: center;
+    }
+
+    #tech__backend {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .tech__items {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2vw;
+        row-gap: 14vh;
+        justify-items: center;        
+    }
+    @media (min-width: 800px) {
+
+        .tech__items {
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 12vw;
+            row-gap: 14vh;
+            justify-items: center;        
+        }
+    }
+
+    #tech__backend__items > div {
+        background-color: var(--colorCompliment_a);
+        height: 90px;
+        width: 90px;
+        padding-top: 10%;
+
+    }
+    @media (min-width: 800px) {
+
+        #tech__backend__items > div {
+            /*background-color: var(--colorCompliment_a);*/
+            height: 160px;
+            width: 160px;
+            /*padding-top: 10%;*/
+    
+        }
+    }
+
+
+/*================================================
+    --- Story ---
+================================================*/ 
+    .story__tab {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .story__tab figure {
+        width: 40%;
+    }
+
+    .story__tab__content {
+        justify-content: flex-end;
+        width: 60%;
+    }
+/*================================================
+    --- Contact ---
+================================================*/
+    .contact {
+        align-items: center;
+    }
+
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        min-width: 50vw;
+
+    }
+
+    @media (min-width: 800px) {
+        .contact__form {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding-top: 5vh;
+            /*min-width: 50vw;*/
+        }
+
+        .table__submit {
+            grid-column-start: 1;
+            grid-column-end: 3;
+             margin: 0 2vw 0 2vw;
+            background-color: var(--colorCompliment);
+            border: solid var(--colorCompliment_a);
+            color: var(--colorDominant_b);
+        }
+
+    }
+
+    .table__submit {
+        background-color: var(--colorCompliment);
+        border: solid var(--colorCompliment_a);
+        color: var(--colorDominant_b);
+    }
+
+    .table__submit:hover {
+        /*background-color: var(--colorDominant);*/
+        border: solid var(--colorAccent);
+        color: var(--colorDominant);
+    }
+
+    .table__item {
+        margin-bottom: 0.5rem;
+    }
+
+/*================================================
+    --- Footer ---
+================================================*/
+    .footer {
+        min-height: 10vh;
+        max-height: 15vh;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
