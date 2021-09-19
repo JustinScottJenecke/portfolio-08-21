@@ -18,6 +18,7 @@
 
             --colorCompliment: #ececec;  /*Text & Contrast*/
             --colorCompliment_a: #c0bebe;
+            --colorCompliment_b: #797979;
 
             --colorAccent: #55ff4d; /*Lime-Neon*/
 
@@ -264,6 +265,7 @@
 ================================================*/
     .contact {
         align-items: center;
+        text-align: center;
     }
 
     .contact__form {
@@ -273,21 +275,28 @@
 
     }
 
+    @media (max-width: 799px) {
+        .contact__form {
+            text-align: justify;
+        }
+    }
+
     @media (min-width: 800px) {
         .contact__form {
             display: grid;
             grid-template-columns: repeat(2,1fr);
-            padding-top: 5vh;
+            padding: 5vh 0 5vh 0;
             /*min-width: 50vw;*/
         }
 
         .table__submit {
             grid-column-start: 1;
             grid-column-end: 3;
-             margin: 0 2vw 0 2vw;
+            margin: 3vh 3vw 0 3vw;
             background-color: var(--colorCompliment);
             border: solid var(--colorCompliment_a);
             color: var(--colorDominant_b);
+            font-size: var(--sizeHeading_b);
         }
 
     }
@@ -295,17 +304,24 @@
     .table__submit {
         background-color: var(--colorCompliment);
         border: solid var(--colorCompliment_a);
-        color: var(--colorDominant_b);
+        color: var(--colorCompliment_b);
     }
 
     .table__submit:hover {
-        /*background-color: var(--colorDominant);*/
         border: solid var(--colorAccent);
-        color: var(--colorDominant);
+        color: rgb(23, 201, 0);
+
     }
 
     .table__item {
-        margin-bottom: 0.5rem;
+        margin: 0.5rem 0 0.5rem 0;
+    }
+
+    .ti__input {
+        font-family: var(--fontlink);
+        background-color: var(--colorDominant_a);
+        color: var(--colorAccent);
+        border-color: var(--colorDominant_a);
     }
 
 /*================================================

@@ -180,24 +180,25 @@
 
         <section class="tab contact" id="contact">
             <h2>Contact Me</h2>
-            <form class="contact__form" action="https://formsubmit.co/your@email.com" method="POST">          
+            <h4>If you think I am good for your company, or just want to say hi? Then contact me via the form below and I will get back to as soon as possible.</h4>
+            <form class="contact__form" action="https://formsubmit.co/justinjenecke@gmail.com" method="POST">          
 
                 <input type="hidden" name="_next" value="resource/thanks.htm">
 
                 <label class="table__item" for="name">Name:</label>
-                <input class="table__item" type="text" id="formName" name="name"> 
+                <input class="table__item ti__input" type="text" required id="formName" name="name"> 
 
                 <label class="table__item" for="subject">Subject:</label>
-                <input class="table__item" type="text" id="formSubject" name="subject"> 
+                <input class="table__item ti__input" type="text" required id="formSubject" name="subject"> 
 
                 <label class="table__item" for="fname">Email:</label>
-                <input class="table__item" type="email" id="formEmail" name="email"> 
+                <input class="table__item ti__input" type="email" required id="formEmail" name="email"> 
 
                 <input class="table__item" type="text" name="_honey" style="display:none">
-                <input class="table__item" type="hidden" name="_captcha" value="false">
+                <input class="table__item ti__input" type="hidden" name="_captcha" value="false">
 
                 <label class="table__item" for="message">Message:</label>
-                <textarea class="table__item" id="formMessage" name="message" rows="5">Please type your message here..</textarea>
+                <textarea class="table__item ti__input" id="formMessage" name="message" required rows="5"></textarea>
 
                 <input class="table__submit" type="submit" value="Submit">
             </form>
@@ -206,8 +207,7 @@
 <!--================= Footer Section ==================-->
 
         <section class="tab footer" id="footer">               
-            <figure><img src="#" alt="email"></figure>              
-            <figure><img src="#" alt="phone"></figure>      
+            <figure><img src="#" alt="email"></figure>                
             <figure><img src="#" alt="linkedin"></figure>                     
             <figure><img src="#" alt="github"></figure>
         </section>
